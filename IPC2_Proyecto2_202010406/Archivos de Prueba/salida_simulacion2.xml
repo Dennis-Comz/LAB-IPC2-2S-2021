@@ -1,0 +1,27 @@
+<SalidaSimulacion>
+	<Nombre>prueba2</Nombre>
+	<ListadoProductos> 
+		<Producto> 
+			<Nombre>Smartwatch</Nombre>
+			<TiempoTotal>4</TiempoTotal> 
+				<ElaboracionOptima> 
+					<Tiempo NoSegundo="1"> 
+						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 1</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 1</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="2"> 
+						<LineaEnsamblaje NoLinea="1">Ensamblar - componente 1</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 2</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="3"> 
+						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 3</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="4"> 
+						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">Ensamblar - componente 3</LineaEnsamblaje>
+					</Tiempo>
+				</ElaboracionOptima> 
+		</Producto>
+	</ListadoProductos> 
+</SalidaSimulacion>

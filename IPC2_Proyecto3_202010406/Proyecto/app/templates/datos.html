@@ -1,0 +1,83 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
+    <link rel="icon" href="{% static 'images/sat-logo.png' %}">
+    <title>SAT</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg justify-content-between">
+        <div>
+            <img src="{% static 'images/sat-logo.png' %}">
+        </div>
+        <div>
+            <a type="button" class="btn btn-secondary" href="/">Inicio</a>
+            <div class="btn-group">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                  Ayuda
+                </button>
+                <ul class="dropdown-menu dropdown-menu-lg-end">
+                  <li><a type="button" class="dropdown-item">Informacion Estudiante</a></li>
+                  <li><a type="button" class="dropdown-item" href="documentacion">Ver Documentacion</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br><br><br>
+    <div class="container-sm">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Campos</th>
+                <th scope="col">Datos</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Nombre</th>
+                <td>Dennis Mauricio Corado Muñóz</td>
+              </tr>
+              <tr>
+                <th scope="row">Carnet</th>
+                <td>202010406</td>
+              </tr>
+              <tr>
+                <th scope="row">CUI</th>
+                <td>3032329780108</td>
+              </tr>
+              <tr>
+                <th scope="row">Universidad</th>
+                <td>Universidad de San Carlos de Guatemala</td>
+              </tr>
+              <tr>
+                <th scope="row">Carrera</th>
+                <td>Ingeniería en Ciencias y Sistemas</td>
+              </tr>
+              <tr>
+                <th scope="row">Semestre</th>
+                <td>4to Semestre</td>
+              </tr>
+              <tr>
+                <th scope="row">Curso</th>
+                <td>Introducción a la Programación y Computación 2</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <footer>
+
+        </footer>
+    
+        <!-- Conexion a scripts de bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <!-- <script src="{% static 'scripts/script.js' %}"></script> -->
+    
+</body>
+</html>
