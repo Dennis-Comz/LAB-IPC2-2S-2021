@@ -1,0 +1,112 @@
+
+digraph L{
+	node[shape=box fillcolor="#FFFFFF" style = filled]
+	subgraph cluster_p{
+		label = "terreno1"
+		bgcolor = "#C8FD88"
+		raiz[label = "0,0"]
+		edge[dir = "none"]
+
+		Fila1[label = "1", group = 1, fillcolor="#E67E37"];
+		Fila2[label = "2", group = 1, fillcolor="#E67E37"];
+		Fila3[label = "3", group = 1, fillcolor="#E67E37"];
+		Fila4[label = "4", group = 1, fillcolor="#E67E37"];
+		Fila5[label = "5", group = 1, fillcolor="#E67E37"];
+		Fila1->Fila2;
+		Fila2->Fila3;
+		Fila3->Fila4;
+		Fila4->Fila5;
+		Columna1[label = "1", group = 2, fillcolor=yellow];
+		Columna2[label = "2", group = 3, fillcolor=yellow];
+		Columna3[label = "3", group = 4, fillcolor=yellow];
+		Columna4[label = "4", group = 5, fillcolor=yellow];
+		Columna5[label = "5", group = 6, fillcolor=yellow];
+		Columna1->Columna2;
+		Columna2->Columna3;
+		Columna3->Columna4;
+		Columna4->Columna5;
+		raiz->Fila1;
+		raiz->Columna1;
+		{rank = same raiz;Columna1;Columna2;Columna3;Columna4;Columna5}
+		nodo1_1[label = "1",group=2, fillcolor="#FE493D"]
+		nodo2_1[label = "4",group=2, fillcolor="#FE493D"]
+		nodo3_1[label = "3",group=2, fillcolor="#FE493D"]
+		nodo4_1[label = "5",group=2, fillcolor="#FE493D"]
+		nodo5_1[label = "2",group=2, fillcolor="#FE493D"]
+		nodo1_2[label = "1",group=3, fillcolor="#FE493D"]
+		nodo2_2[label = "1",group=3, fillcolor="#FE493D"]
+		nodo3_2[label = "1",group=3, fillcolor="#FE493D"]
+		nodo4_2[label = "2",group=3, fillcolor="#FE493D"]
+		nodo5_2[label = "1",group=3, fillcolor="#FE493D"]
+		nodo1_3[label = "5",group=4, fillcolor="#FE493D"]
+		nodo2_3[label = "4",group=4, fillcolor="#FE493D"]
+		nodo3_3[label = "1",group=4, fillcolor="#FE493D"]
+		nodo4_3[label = "3",group=4, fillcolor="#FE493D"]
+		nodo5_3[label = "1",group=4, fillcolor="#FE493D"]
+		nodo1_4[label = "3",group=5, fillcolor="#FE493D"]
+		nodo2_4[label = "2",group=5, fillcolor="#FE493D"]
+		nodo3_4[label = "3",group=5, fillcolor="#FE493D"]
+		nodo4_4[label = "1",group=5, fillcolor="#FE493D"]
+		nodo5_4[label = "1",group=5, fillcolor="#FE493D"]
+		nodo1_5[label = "2",group=6, fillcolor="#FE493D"]
+		nodo2_5[label = "6",group=6, fillcolor="#FE493D"]
+		nodo3_5[label = "3",group=6, fillcolor="#FE493D"]
+		nodo4_5[label = "2",group=6, fillcolor="#FE493D"]
+		nodo5_5[label = "1",group=6, fillcolor="#FE493D"]
+		Fila1->nodo1_1;
+		nodo1_1->nodo1_2;
+		nodo1_2->nodo1_3;
+		nodo1_3->nodo1_4;
+		nodo1_4->nodo1_5;
+		{rank = same;Fila1;nodo1_1;nodo1_2;nodo1_3;nodo1_4;nodo1_5}
+		Fila2->nodo2_1;
+		nodo2_1->nodo2_2;
+		nodo2_2->nodo2_3;
+		nodo2_3->nodo2_4;
+		nodo2_4->nodo2_5;
+		{rank = same;Fila2;nodo2_1;nodo2_2;nodo2_3;nodo2_4;nodo2_5}
+		Fila3->nodo3_1;
+		nodo3_1->nodo3_2;
+		nodo3_2->nodo3_3;
+		nodo3_3->nodo3_4;
+		nodo3_4->nodo3_5;
+		{rank = same;Fila3;nodo3_1;nodo3_2;nodo3_3;nodo3_4;nodo3_5}
+		Fila4->nodo4_1;
+		nodo4_1->nodo4_2;
+		nodo4_2->nodo4_3;
+		nodo4_3->nodo4_4;
+		nodo4_4->nodo4_5;
+		{rank = same;Fila4;nodo4_1;nodo4_2;nodo4_3;nodo4_4;nodo4_5}
+		Fila5->nodo5_1;
+		nodo5_1->nodo5_2;
+		nodo5_2->nodo5_3;
+		nodo5_3->nodo5_4;
+		nodo5_4->nodo5_5;
+		{rank = same;Fila5;nodo5_1;nodo5_2;nodo5_3;nodo5_4;nodo5_5}
+		Columna1->nodo1_1;
+		nodo1_1->nodo2_1;
+		nodo2_1->nodo3_1;
+		nodo3_1->nodo4_1;
+		nodo4_1->nodo5_1;
+		Columna2->nodo1_2;
+		nodo1_2->nodo2_2;
+		nodo2_2->nodo3_2;
+		nodo3_2->nodo4_2;
+		nodo4_2->nodo5_2;
+		Columna3->nodo1_3;
+		nodo1_3->nodo2_3;
+		nodo2_3->nodo3_3;
+		nodo3_3->nodo4_3;
+		nodo4_3->nodo5_3;
+		Columna4->nodo1_4;
+		nodo1_4->nodo2_4;
+		nodo2_4->nodo3_4;
+		nodo3_4->nodo4_4;
+		nodo4_4->nodo5_4;
+		Columna5->nodo1_5;
+		nodo1_5->nodo2_5;
+		nodo2_5->nodo3_5;
+		nodo3_5->nodo4_5;
+		nodo4_5->nodo5_5;
+	}
+}
